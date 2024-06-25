@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+.img {
+  background-image: url("../public/cardphoto.jpg");
+}
+
 body {
   background: #E5E5E5;
   background-image: url("bg.jpg");
@@ -16,7 +20,7 @@ body {
 }
 
 #card, #card-front, #card-inside {
-  height: 580px;
+  height: 650px;
 }
 
 .wrap {
@@ -25,7 +29,7 @@ body {
 }
 
 #card-front, #card-inside {
-  width: 50%;
+  width: 55%;
   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -70,9 +74,9 @@ body {
 #card-inside {
   font-size: 1.3em;
   line-height: 1.4;
-font-family: 'Lobster';
+  font-family: 'Lobster', cursive;
   color: #331717;
-  font-style: italic;
+
 }
 
 p {
@@ -404,10 +408,36 @@ font-family: 'Lobster', cursive;
           backface-visibility: hidden;
   background-position: center;
   background-size: cover;
-  -webkit-animation: fade-in 20s ease-in;
-          animation: fade-in 20s ease-in;
+  -webkit-animation: fade-in 15s ease-in;
+          animation: fade-in 15s ease-in;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+.bttn-audio-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0; /* Espacio arriba y abajo */
+  background-color: transparent; /* Fondo transparente para que solo afecte a los botones */
+}
+
+.bttn-audio {
+  background-color: darkblue; /* Color de fondo azul oscuro */
+  color: white; /* Color de texto blanco */
+  border: none; /* Eliminar bordes predeterminados */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Relleno alrededor del texto */
+  margin: 0 10px; /* Espacio alrededor de cada botón */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Opcional: Efecto hover para dar feedback visual al pasar el mouse */
+.bttn-audio:hover {
+  background-color: blue; /* Cambiar el color de fondo al pasar el mouse */
 }
 
 @-webkit-keyframes fade-in {
@@ -427,3 +457,4 @@ font-family: 'Lobster', cursive;
     opacity: 1;
   }
 }
+

@@ -1,8 +1,24 @@
+function playAudio() {
+  var audio = document.querySelector('.song');
+  audio.play().then(function() {
+      console.log('Playback started!');
+  }).catch(function(error) {
+      console.error('Failed to start playback.', error);
+  });
+}
+function pauseAudio() {
+  var audio = document.querySelector('.song');
+  audio.pause().then(function() {
+      console.log('Playback started!');
+  }).catch(function(error) {
+      console.error('Failed to start playback.', error);
+  });
+}
+
 (function() {
   function $(id) {
     return document.getElementById(id);
   }
-
   var card = $('card'),
       openB = $('open'),
       closeB = $('close'),
@@ -25,5 +41,4 @@
       timer = null;
     }, 1000);
   });
-
 }());
