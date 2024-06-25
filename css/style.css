@@ -425,7 +425,7 @@ font-family: 'Lobster', cursive;
 }
 
 .bttn-audio {
-  background-color: darkblue; /* Color de fondo azul oscuro */
+  background-color: #FF5555; /* Color de fondo azul oscuro */
   color: white; /* Color de texto blanco */
   border: none; /* Eliminar bordes predeterminados */
   border-radius: 5px; /* Bordes redondeados */
@@ -437,7 +437,7 @@ font-family: 'Lobster', cursive;
 
 /* Opcional: Efecto hover para dar feedback visual al pasar el mouse */
 .bttn-audio:hover {
-  background-color: blue; /* Cambiar el color de fondo al pasar el mouse */
+  background-color: #ffaaaa; /* Cambiar el color de fondo al pasar el mouse */
 }
 
 @-webkit-keyframes fade-in {
